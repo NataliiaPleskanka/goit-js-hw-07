@@ -1,10 +1,9 @@
-const allIiItems = document.querySelector("#categories");
-const lengthItems = allIiItems.children.length;
-
-console.log(`Number of categories: ${lengthItems}`);
-
-const titlesCtegories = document.querySelectorAll("h2");
-titlesCtegories.forEach((title) => {
-  console.log("Category:", title.textContent);
-  console.log("Elements:", title.nextElementSibling.children.length);
-});
+const listItem = document.querySelectorAll('#categories > .item');
+console.log('Number of categories: ', listItem.length);
+const itemTitles = document.querySelectorAll('#categories > .item > h2');
+const nestedUlElements = document.querySelectorAll('#categories > .item > ul');
+for (let i = 0; i <= listItem.length-1; i+=1) {
+    console.log('Category: ', itemTitles[i].textContent);
+    const liElementsInNestedUl = nestedUlElements[i].querySelectorAll('li');
+  console.log('Elements: ', liElementsInNestedUl.length);
+}

@@ -51,17 +51,3 @@ ul {
   width: 360px;
   height: 40px;
 }
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin-top: 100px;
-  row-gap: 48px;
-  column-gap: 24px;
-}
-.gallery > li {
-  position: relative;
-  display: inline-block;
-  width: calc((100% - 48px) / 3);
-}
