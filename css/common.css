@@ -15,7 +15,7 @@ body {
 ul {
   list-style: none;
 }
-.categories {
+#categories {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
